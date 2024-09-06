@@ -12,4 +12,7 @@ public class Sum implements IExpr{
 		return v.visitSum(this);
 	}
 
+	public String print(IVisitor v) {
+		return v.printSum(this);
+	}
 }

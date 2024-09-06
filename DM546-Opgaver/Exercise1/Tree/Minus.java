@@ -11,4 +11,8 @@ public class Minus implements IExpr{
 	public Integer accept(IVisitor v) {
 		return v.visitMinus(this);
 	}
+
+	public String print(IVisitor v) {
+		return v.printMinus(this);
+	}
 }

@@ -11,4 +11,8 @@ public class Mult implements IExpr{
 	public Integer accept(IVisitor v) {
 		return v.visitMult(this);
 	}
+
+	public String print(IVisitor v) {
+		return v.printMult(this);
+	}
 }

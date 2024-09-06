@@ -11,4 +11,7 @@ public class Number implements IExpr {
 		return v.visitNumber(this);
 	}
 
+	public String print(IVisitor v) {
+		return v.printNumber(this);
+	}
 }
