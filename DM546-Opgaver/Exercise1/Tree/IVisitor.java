@@ -4,4 +4,5 @@ public interface IVisitor {
 	Integer visitNumber(Number num);
 	Integer visitSum(Sum sum);
 	Integer visitMult(Mult mult);
+	Integer visitMinus(Minus sub);
 }

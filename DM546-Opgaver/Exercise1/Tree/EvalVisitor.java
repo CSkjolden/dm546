@@ -13,4 +13,8 @@ public class EvalVisitor implements IVisitor{
 	public Integer visitMult(Mult mult) {
 		return mult.left.accept(this) * mult.right.accept(this);
 	}
+
+	public Integer visitMinus(Minus sub) {
+		return sub.left.accept(this) - sub.right.accept(this);
+	}
 }
